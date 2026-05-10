@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gedeon LEKOUNDA | Software & Data Engineer</title>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  
+  <!-- tsParticles Library -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine@2.12.0/tsparticles.engine.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles-basic@2.12.0/tsparticles.basic.min.js"></script>
+  <!-- Isotope for filtering -->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+</head>
+<body>
+
+  <!-- Background Effects -->
+  <div class="bg-glow"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="nav-logo">GedeonLekounda.</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#activities">Activities</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-controls" style="display: flex; align-items: center; gap: 1rem;">
+      <button id="theme-toggle" class="btn-icon" style="background:transparent; border:none; color:var(--text-primary); font-size:1.2rem; cursor:pointer;" aria-label="Toggle theme">
+        <i class="bi bi-brightness-high-fill" id="theme-icon"></i>
+      </button>
+      <div class="mobile-menu-toggle"><i class="bi bi-list"></i></div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div id="tsparticles"></div>
+    <div class="hero-content-wrapper glass-panel reveal" style="position: relative; z-index: 2; padding: 4rem 2rem; max-width: 800px; margin: 0 auto; background: rgba(15, 23, 42, 0.45);">
+      
+      <div class="profile-avatar mb-4">
+        <img src="assets/img/Profile3.jpg" alt="GedeonLEKOUNDA" class="avatar-img">
+      </div>
+
+      <div class="hero-badge">
+        <i class="bi bi-rocket-takeoff"></i> Open to new opportunities
+      </div>
+      
+      <h1>
+        Gedeon M. LEKOUNDA <br>
+        <span class="dynamic-text" id="typewriter"></span>
+      </h1>
+      
+      <p class="hero-bio">
+        Bridging the gap between software engineering and data science. Building scalable web applications, designing robust data pipelines, and orchestrating modern cloud infrastructure to transform complex problems into elegant solutions.
+      </p>
+      
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary"><i class="bi bi-envelope"></i> Contact</a>
+        <a href="#projects" class="btn btn-secondary"><i class="bi bi-briefcase"></i> View Projects</a>
+        <a href="#" class="btn btn-secondary"><i class="bi bi-download"></i> Download CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2 class="section-title reveal">About <span>Me</span></h2>
+    
+    <div class="about-grid">
+      <div class="glass-panel reveal about-text">
+        <h3>About Me</h3>
+        <p>A passionate software and data engineer, I work at the intersection of software development, data science, and DevOps. My approach is holistic: I design, build, and deploy end-to-end solutions.</p>
+        <p>With a strong background in data engineering, machine learning, and cloud architectures, I help organizations transform their data into tangible business value.</p>
+        <p>Curious, rigorous, and impact-driven, I am passionate about emerging technologies—from generative AI to modern MLOps infrastructures.</p>
+      </div>
+      
+      <div class="stats-grid">
+        <div class="glass-panel stat-card reveal">
+          <div class="stat-icon"><i class="bi bi-calendar2-check"></i></div>
+          <div class="stat-number" data-target="6">0</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="glass-panel stat-card reveal">
+          <div class="stat-icon"><i class="bi bi-layers"></i></div>
+          <div class="stat-number" data-target="25">0</div>
+          <div class="stat-label">Technologies Mastered</div>
+        </div>
+        <div class="glass-panel stat-card reveal">
+          <div class="stat-icon"><i class="bi bi-folder-check"></i></div>
+          <div class="stat-number" data-target="15">0</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="glass-panel stat-card reveal">
+          <div class="stat-icon"><i class="bi bi-cup-hot"></i></div>
+          <div class="stat-number" data-target="1200">0</div>
+          <div class="stat-label">Commits This Year</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section id="skills">
+    <h2 class="section-title reveal">Technical <span>Skills</span></h2>
+    
+    <div class="skills-container">
+      
+      <!-- Software Engineering -->
+      <div class="glass-panel skill-category reveal">
+        <div class="category-header">
+          <i class="bi bi-code-slash"></i>
+          <h3>Software Engineering</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-info"><span>JavaScript / TypeScript</span> <span>90%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Python</span> <span>85%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Node.js / React</span> <span>80%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+          </div>
+          <div class="skill-badges">
+            <span class="badge">Java</span><span class="badge">Vue.js 3</span><span class="badge">REST API</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Database & Data Engineering -->
+      <div class="glass-panel skill-category reveal">
+        <div class="category-header">
+          <i class="bi bi-database"></i>
+          <h3>Database & Data Eng</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-info"><span>PostgreSQL / MySQL</span> <span>85%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>ETL Pipelines</span> <span>80%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+          </div>
+          <div class="skill-badges">
+            <span class="badge">MongoDB</span><span class="badge">Data Warehousing</span><span class="badge">Apache Spark</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Science & AI -->
+      <div class="glass-panel skill-category reveal">
+        <div class="category-header">
+          <i class="bi bi-cpu"></i>
+          <h3>Data Science & AI</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-info"><span>Machine Learning</span> <span>75%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Pandas / Scikit-learn</span> <span>85%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+          </div>
+          <div class="skill-badges">
+            <span class="badge">TensorFlow</span><span class="badge">Deep Learning</span><span class="badge">NLP</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- DevOps & MLOps -->
+      <div class="glass-panel skill-category reveal">
+        <div class="category-header">
+          <i class="bi bi-cloud-check"></i>
+          <h3>DevOps & MLOps</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-info"><span>Docker / Kubernetes</span> <span>80%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>CI/CD (GitHub Actions)</span> <span>85%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+          </div>
+          <div class="skill-badges">
+            <span class="badge">MLflow</span><span class="badge">Airflow</span><span class="badge">AWS / GCP / Azure</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Professional Experience Section -->
+  <section id="experience">
+    <h2 class="section-title reveal">Professional <span>Experience</span></h2>
+    
+    <div class="timeline modern-timeline">
+      
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="glass-panel timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3>Lead Developer</h3>
+              <h4>Bureau d’études</h4>
+            </div>
+            <span class="timeline-duration">05/2023 – Present</span>
+          </div>
+          <p class="timeline-responsibilities">Led the architecture and development of the CFI-CIRAS academic ERP system from conception to deployment.</p>
+          <ul>
+            <li>Analyzed requirements and created the technical specifications.</li>
+            <li>Designed system architecture and data modeling.</li>
+            <li>Managed the migration and integration of WebServices.</li>
+          </ul>
+          <div class="timeline-tech">
+            <span class="badge">Node.js</span><span class="badge">PostgreSQL</span><span class="badge">React</span><span class="badge">Docker</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="glass-panel timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3>IT Administrator & Tech Lead</h3>
+              <h4>CFI-CIRAS</h4>
+            </div>
+            <span class="timeline-duration">05/2022 – 04/2023</span>
+          </div>
+          <p class="timeline-responsibilities">Managed technical infrastructure, LMS integrations, and database administration.</p>
+          <ul>
+            <li>Implemented a digital time-tracking system for trainers.</li>
+            <li>Maintained the operational status of hosted cloud platforms.</li>
+            <li>Integrated LMS data with existing databases.</li>
+          </ul>
+          <div class="timeline-tech">
+            <span class="badge">MySQL</span><span class="badge">PHP</span><span class="badge">AWS</span><span class="badge">Linux Admin</span>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2 class="section-title reveal">Education & <span>Training</span></h2>
+    
+    <div class="education-grid">
+      <!-- Degrees -->
+      <div class="glass-panel edu-card reveal">
+        <div class="edu-icon"><i class="bi bi-mortarboard"></i></div>
+        <h3>Master of Science in BIG DATA</h3>
+        <h4>AIMS Senegal/ Current Studies</h4>
+        <span class="edu-date">10/2025 – 03/2027</span>
+        <p>Specializing in big data architecture, distributed systems, and advanced machine learning modeling.</p>
+      </div>
+
+      <div class="glass-panel edu-card reveal">
+        <div class="edu-icon"><i class="bi bi-journal-code"></i></div>
+        <h3>Professional License in Software Engineering</h3>
+        <h4>Brazzaville, Congo</h4>
+        <span class="edu-date">12/2020 – 11/2021</span>
+        <p>Focus on software architecture, advanced algorithms, and full-stack development methodologies.</p>
+      </div>
+
+      <div class="glass-panel edu-card reveal">
+        <div class="edu-icon"><i class="bi bi-laptop"></i></div>
+        <h3>DUT in Management IT</h3>
+        <h4>Brazzaville, Congo</h4>
+        <span class="edu-date">10/2018 – 09/2020</span>
+        <p>Foundational IT technician skills, systems administration, and basic programming.</p>
+      </div>
+
+      <!-- Certifications -->
+      <div class="glass-panel edu-card reveal">
+        <div class="edu-icon"><i class="bi bi-award"></i></div>
+        <h3>Cloud & AI Certifications</h3>
+        <h4>AWS / Google Cloud</h4>
+        <span class="edu-date">Ongoing</span>
+        <p>AWS Solutions Architect Associate, Google Professional Data Engineer preparation, MLOps bootcamps.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2 class="section-title reveal">Featured <span>Projects</span></h2>
+    
+    <div class="portfolio-filters reveal">
+      <button class="filter-btn active" data-filter="*">All</button>
+      <button class="filter-btn" data-filter=".web">Web</button>
+      <button class="filter-btn" data-filter=".data">Data</button>
+      <button class="filter-btn" data-filter=".ai">AI</button>
+      <button class="filter-btn" data-filter=".devops">DevOps/MLOps</button>
+    </div>
+
+    <div class="projects-grid isotope-grid">
+      
+      <!-- Project 1 -->
+      <div class="glass-panel project-card isotope-item web data">
+        <div class="project-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="ERP Dashboard">
+        </div>
+        <div class="project-info">
+          <h3>Academic ERP System</h3>
+          <p>A comprehensive academic management system for CFI-CIRAS featuring complex data modeling, reporting, and WebServices integration.</p>
+          <div class="project-tech">
+            <span class="badge">React</span><span class="badge">Node.js</span><span class="badge">PostgreSQL</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-icon"><i class="bi bi-github"></i> Source</a>
+            <a href="#" class="btn-icon"><i class="bi bi-box-arrow-up-right"></i> Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="glass-panel project-card isotope-item ai devops">
+        <div class="project-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Biometric System">
+        </div>
+        <div class="project-info">
+          <h3>Biometric Attendance API</h3>
+          <p>Automated digital attendance management system using fingerprint recognition, processed via an ML pipeline and deployed on Kubernetes.</p>
+          <div class="project-tech">
+            <span class="badge">Python</span><span class="badge">TensorFlow</span><span class="badge">Kubernetes</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-icon"><i class="bi bi-github"></i> Source</a>
+            <a href="#" class="btn-icon"><i class="bi bi-box-arrow-up-right"></i> Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="glass-panel project-card isotope-item data web">
+        <div class="project-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Finance App">
+        </div>
+        <div class="project-info">
+          <h3>Inter-agency Transfer Engine</h3>
+          <p>Computerized inter-agency money transfer system ensuring ACID compliance, high availability, and real-time ledger updates.</p>
+          <div class="project-tech">
+            <span class="badge">Java</span><span class="badge">Spring Boot</span><span class="badge">MySQL</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-icon"><i class="bi bi-github"></i> Source</a>
+            <a href="#" class="btn-icon"><i class="bi bi-box-arrow-up-right"></i> Demo</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Activities Section -->
+  <section id="activities">
+    <h2 class="section-title reveal">Activities & <span>Leadership</span></h2>
+    
+    <div class="activities-grid">
+      <div class="glass-panel activity-card reveal">
+        <div class="activity-icon"><i class="bi bi-mic"></i></div>
+        <div class="activity-content">
+          <h3>Tech Conferences</h3>
+          <p>Regular attendee and occasional speaker at regional tech summits focusing on scalable architecture and data science.</p>
+        </div>
+      </div>
+
+      <div class="glass-panel activity-card reveal">
+        <div class="activity-icon"><i class="bi bi-code-square"></i></div>
+        <div class="activity-content">
+          <h3>Hackathons</h3>
+          <p>Participated in multiple competitive coding and AI hackathons, focusing on building sustainable tech solutions.</p>
+        </div>
+      </div>
+
+      <div class="glass-panel activity-card reveal">
+        <div class="activity-icon"><i class="bi bi-people"></i></div>
+        <div class="activity-content">
+          <h3>Mentorship & Community</h3>
+          <p>Actively mentoring junior developers and leading workshops in the local tech community on web development and Python.</p>
+        </div>
+      </div>
+
+      <div class="glass-panel activity-card reveal">
+        <div class="activity-icon"><i class="bi bi-github"></i></div>
+        <div class="activity-content">
+          <h3>Open Source & Blogging</h3>
+          <p>Contributing to open-source data engineering tools and writing technical blogs on MLOps and system design on Medium/Dev.to.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 class="section-title reveal">Get in <span>Touch</span></h2>
+    
+    <div class="contact-grid">
+      
+      <div class="glass-panel contact-info reveal">
+        <h3>Contact Information</h3>
+        <p>Ready to discuss your next big project or potential collaborations? Feel free to reach out.</p>
+        
+        <div class="contact-links">
+          <a href="mailto:contact@example.com" class="contact-item">
+            <i class="bi bi-envelope-fill"></i> contact@example.com
+          </a>
+          <a href="https://linkedin.com" class="contact-item">
+            <i class="bi bi-linkedin"></i> LinkedIn Profile
+          </a>
+          <a href="https://github.com" class="contact-item">
+            <i class="bi bi-github"></i> GitHub Profile
+          </a>
+          <a href="https://wa.me/1234567890" class="contact-item">
+            <i class="bi bi-whatsapp"></i> +242 06 000 00 00
+          </a>
+        </div>
+      </div>
+
+      <div class="glass-panel contact-form-wrapper reveal">
+        <form class="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Subject" required>
+          </div>
+          <div class="form-group">
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+    
+    <!-- Interactive Map -->
+    <div class="glass-panel map-container reveal mt-4">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m2!1s0x1a6a316c02eb9ee7%3A0xcb0d91b400977e20!2sBrazzaville%2C%20Republic%20of%20the%20Congo!5e0!3m2!1sen!2sus!4v1715200000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Gedeon LEKOUNDA. High-End Portfolio Designed for Impact.</p>
+  </footer>
+
+  <!-- Custom Script -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
